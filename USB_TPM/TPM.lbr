@@ -101,7 +101,7 @@
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
@@ -2289,8 +2289,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pin name="GPIO-EXPRESS-00" x="-15.24" y="5.08" length="middle" direction="pwr"/>
 <pin name="GPIO1" x="-15.24" y="20.32" length="middle"/>
 <pin name="GPIO2" x="-15.24" y="22.86" length="middle"/>
-<pin name="TESTBI" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
-<pin name="TESTL" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
+<pin name="TESTBI" x="-15.24" y="-5.08" length="middle"/>
+<pin name="TESTL" x="-15.24" y="-2.54" length="middle"/>
 <pin name="VCC@10" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
 <pin name="VCC@19" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
 <pin name="VCC@24" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
@@ -4237,6 +4237,29 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATECC508" prefix="ECC">
+<description>ATECC108: Provides ECDSA with NIST curves P256, B283, and K283.  Also, a RNG, 8.5Kb EEPROM.  2.0V - 5.5V.</description>
+<gates>
+<gate name="G$1" symbol="CRYPTOTRONIX_ATECC108" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYPTOTRONIX_SOIC8">
+<connects>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="NC1" pad="1"/>
+<connect gate="G$1" pin="NC2" pad="2"/>
+<connect gate="G$1" pin="NC3" pad="3"/>
+<connect gate="G$1" pin="NC7" pad="7"/>
+<connect gate="G$1" pin="SCL" pad="6"/>
+<connect gate="G$1" pin="SDA" pad="5"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>

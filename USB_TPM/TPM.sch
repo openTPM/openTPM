@@ -2101,8 +2101,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <pin name="GPIO-EXPRESS-00" x="-15.24" y="5.08" length="middle" direction="pwr"/>
 <pin name="GPIO1" x="-15.24" y="20.32" length="middle"/>
 <pin name="GPIO2" x="-15.24" y="22.86" length="middle"/>
-<pin name="TESTBI" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
-<pin name="TESTL" x="-15.24" y="-2.54" length="middle" direction="pwr"/>
+<pin name="TESTBI" x="-15.24" y="-5.08" length="middle"/>
+<pin name="TESTL" x="-15.24" y="-2.54" length="middle"/>
 <pin name="VCC@10" x="-15.24" y="-10.16" length="middle" direction="pwr"/>
 <pin name="VCC@19" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
 <pin name="VCC@24" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
@@ -3647,11 +3647,11 @@ Standard 11x14 US Ledger frame</description>
 <part name="R2" library="TPM" deviceset="RESISTOR" device=".0201" value="3.92K"/>
 <part name="SUPPLY8" library="TPM" deviceset="3.3V" device=""/>
 <part name="SUPPLY9" library="TPM" deviceset="3.3V" device=""/>
-<part name="R3" library="TPM" deviceset="RESISTOR" device=".0402" value="27  Ohm"/>
-<part name="R4" library="TPM" deviceset="RESISTOR" device=".0402" value="27 Ohm"/>
+<part name="R3" library="TPM" deviceset="RESISTOR" device=".0402" value="27"/>
+<part name="R4" library="TPM" deviceset="RESISTOR" device=".0402" value="27"/>
 <part name="SUPPLY10" library="TPM" deviceset="1.2V" device=""/>
 <part name="SUPPLY11" library="TPM" deviceset="3.3V" device=""/>
-<part name="C5" library="TPM" deviceset="CAPACITOR" device=".0201"/>
+<part name="C5" library="TPM" deviceset="CAPACITOR" device=".0201" value="0.1uF"/>
 <part name="GND13" library="TPM" deviceset="GND" device=""/>
 <part name="C9" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
 <part name="C10" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
@@ -3659,7 +3659,6 @@ Standard 11x14 US Ledger frame</description>
 <part name="C12" library="TPM" deviceset="CAPACITOR" device=".0402" value="4.7uF"/>
 <part name="C13" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
 <part name="C14" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
-<part name="C15" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
 <part name="C16" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
 <part name="C17" library="TPM" deviceset="CAPACITOR" device=".0402" value="4.7uF"/>
 <part name="C18" library="TPM" deviceset="CAPACITOR" device=".0201" value=".1uF"/>
@@ -3678,7 +3677,7 @@ Standard 11x14 US Ledger frame</description>
 <part name="C3" library="TPM" deviceset="CAPACITOR" device=".0201" value="0.1uF"/>
 <part name="C6" library="TPM" deviceset="CAPACITOR" device=".0201" value="2200pF"/>
 <part name="Y1" library="TPM" deviceset="RESONATOR" device="12MHZ" value="12MHZ"/>
-<part name="R5" library="TPM" deviceset="RESISTOR" device=".0201"/>
+<part name="R5" library="TPM" deviceset="RESISTOR" device=".0201" value="4.7K"/>
 <part name="R6" library="TPM" deviceset="RESISTOR" device=".0201" value="4.7K"/>
 <part name="R7" library="TPM" deviceset="RESISTOR" device=".0201" value="10K"/>
 <part name="U2" library="TPM" deviceset="TPS62172" device=""/>
@@ -3688,14 +3687,13 @@ Standard 11x14 US Ledger frame</description>
 <part name="SUPPLY16" library="TPM" deviceset="3.3V" device=""/>
 <part name="R8" library="TPM" deviceset="RESISTOR" device=".0402" value="470"/>
 <part name="R9" library="TPM" deviceset="RESISTOR" device=".0201" value="100K"/>
-<part name="C7" library="TPM" deviceset="CAPACITOR" device=".0201"/>
+<part name="C7" library="TPM" deviceset="CAPACITOR" device=".0201" value="0.02uF"/>
 <part name="GND20" library="TPM" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="TPM" deviceset="3.3V" device=""/>
 <part name="C20" library="TPM" deviceset="CAPACITOR" device=".0603" value="22uF"/>
 <part name="R10" library="TPM" deviceset="RESISTOR" device=".0402" value="4.7"/>
 <part name="SUPPLY18" library="TPM" deviceset="VUSB" device=""/>
-<part name="C21" library="TPM" deviceset="CAPACITOR" device=".0201" value="2.2uF"/>
-<part name="Y2" library="TPM" deviceset="CRYSTAL" device="EPSONMC146"/>
+<part name="Y2" library="TPM" deviceset="CRYSTAL" device="EPSONMC146" value="32KHz"/>
 <part name="C22" library="TPM" deviceset="CAPACITOR" device=".0402" value="10uF"/>
 <part name="SUPPLY19" library="TPM" deviceset="VUSB" device=""/>
 <part name="GND21" library="TPM" deviceset="GND" device=""/>
@@ -3707,14 +3705,14 @@ Standard 11x14 US Ledger frame</description>
 <part name="SUPPLY20" library="TPM" deviceset="3.3V" device=""/>
 <part name="R15" library="TPM" deviceset="RESISTOR" device=".0201" value="100K"/>
 <part name="SUPPLY21" library="TPM" deviceset="3.3V" device=""/>
-<part name="C23" library="TPM" deviceset="CAPACITOR" device=".0201"/>
-<part name="C24" library="TPM" deviceset="CAPACITOR" device=".0201"/>
+<part name="C23" library="TPM" deviceset="CAPACITOR" device=".0201" value="22pF"/>
+<part name="C24" library="TPM" deviceset="CAPACITOR" device=".0201" value="22pF"/>
 <part name="GND22" library="TPM" deviceset="GND" device=""/>
-<part name="R16" library="TPM" deviceset="RESISTOR" device=".0201"/>
-<part name="R18" library="TPM" deviceset="RESISTOR" device=".0201"/>
-<part name="R19" library="TPM" deviceset="RESISTOR" device=".0201"/>
-<part name="R20" library="TPM" deviceset="RESISTOR" device=".0201"/>
-<part name="R21" library="TPM" deviceset="RESISTOR" device=".0201"/>
+<part name="R16" library="TPM" deviceset="RESISTOR" device=".0201" value="470"/>
+<part name="R18" library="TPM" deviceset="RESISTOR" device=".0201" value="470"/>
+<part name="R19" library="TPM" deviceset="RESISTOR" device=".0201" value="470"/>
+<part name="R20" library="TPM" deviceset="RESISTOR" device=".0201" value="470"/>
+<part name="R21" library="TPM" deviceset="RESISTOR" device=".0201" value="470"/>
 <part name="SUPPLY22" library="TPM" deviceset="3.3V" device=""/>
 <part name="SUPPLY23" library="TPM" deviceset="3.3V" device=""/>
 <part name="SUPPLY24" library="TPM" deviceset="3.3V" device=""/>
@@ -3790,11 +3788,11 @@ Standard 11x14 US Ledger frame</description>
 <instance part="SUPPLY8" gate="G$1" x="271.78" y="73.66"/>
 <instance part="SUPPLY9" gate="G$1" x="279.4" y="73.66"/>
 <instance part="R3" gate="G$1" x="63.5" y="109.22" smashed="yes">
-<attribute name="NAME" x="59.69" y="105.6386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="64.77" y="105.918" size="1.778" layer="96"/>
+<attribute name="NAME" x="64.77" y="105.6386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="64.77" y="103.378" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="63.5" y="111.76" smashed="yes">
-<attribute name="NAME" x="59.69" y="113.2586" size="1.778" layer="95"/>
+<attribute name="NAME" x="64.77" y="115.7986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.77" y="113.538" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY10" gate="G$1" x="83.82" y="175.26"/>
@@ -3807,7 +3805,6 @@ Standard 11x14 US Ledger frame</description>
 <instance part="C12" gate="G$1" x="370.84" y="147.32"/>
 <instance part="C13" gate="G$1" x="340.36" y="177.8"/>
 <instance part="C14" gate="G$1" x="350.52" y="177.8"/>
-<instance part="C15" gate="G$1" x="360.68" y="177.8"/>
 <instance part="C16" gate="G$1" x="340.36" y="205.74"/>
 <instance part="C17" gate="G$1" x="350.52" y="205.74"/>
 <instance part="C18" gate="G$1" x="373.38" y="205.74"/>
@@ -3848,7 +3845,6 @@ Standard 11x14 US Ledger frame</description>
 <instance part="C20" gate="G$1" x="93.98" y="236.22"/>
 <instance part="R10" gate="G$1" x="50.8" y="129.54" rot="R90"/>
 <instance part="SUPPLY18" gate="G$1" x="50.8" y="142.24"/>
-<instance part="C21" gate="G$1" x="55.88" y="134.62"/>
 <instance part="Y2" gate="G$1" x="147.32" y="243.84" rot="R180"/>
 <instance part="C22" gate="G$1" x="27.94" y="236.22"/>
 <instance part="SUPPLY19" gate="G$1" x="27.94" y="248.92"/>
@@ -4058,9 +4054,6 @@ Standard 11x14 US Ledger frame</description>
 <wire x1="60.96" y1="127" x2="55.88" y2="127" width="0.1524" layer="91"/>
 <wire x1="55.88" y1="127" x2="55.88" y2="116.84" width="0.1524" layer="91"/>
 <junction x="55.88" y="116.84"/>
-<pinref part="C21" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="129.54" x2="55.88" y2="127" width="0.1524" layer="91"/>
-<junction x="55.88" y="127"/>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="GND"/>
@@ -4155,11 +4148,7 @@ Standard 11x14 US Ledger frame</description>
 <wire x1="340.36" y1="170.18" x2="340.36" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="340.36" y1="170.18" x2="350.52" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="170.18" x2="350.52" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="350.52" y1="170.18" x2="360.68" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="170.18" x2="360.68" y2="172.72" width="0.1524" layer="91"/>
 <junction x="340.36" y="170.18"/>
-<junction x="350.52" y="170.18"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -4267,6 +4256,11 @@ Standard 11x14 US Ledger frame</description>
 <wire x1="271.78" y1="53.34" x2="271.78" y2="60.96" width="0.1524" layer="91"/>
 <junction x="271.78" y="53.34"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA3"/>
+<wire x1="152.4" y1="165.1" x2="157.48" y2="165.1" width="0.1524" layer="91" style="longdash"/>
+<label x="157.48" y="165.1" size="1.4224" layer="95" font="vector" ratio="12" xref="yes"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -4289,6 +4283,11 @@ Standard 11x14 US Ledger frame</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="279.4" y1="48.26" x2="279.4" y2="60.96" width="0.1524" layer="91"/>
 <junction x="279.4" y="48.26"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PA4/PGMNCMD"/>
+<wire x1="152.4" y1="162.56" x2="157.48" y2="162.56" width="0.1524" layer="91" style="longdash"/>
+<label x="157.48" y="162.56" size="1.4224" layer="95" font="vector" ratio="12" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -4559,11 +4558,7 @@ Standard 11x14 US Ledger frame</description>
 <wire x1="340.36" y1="182.88" x2="340.36" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="180.34" x2="350.52" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="350.52" y1="182.88" x2="340.36" y2="182.88" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="360.68" y1="180.34" x2="360.68" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="360.68" y1="182.88" x2="350.52" y2="182.88" width="0.1524" layer="91"/>
 <junction x="340.36" y="182.88"/>
-<junction x="350.52" y="182.88"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4611,18 +4606,18 @@ Standard 11x14 US Ledger frame</description>
 <label x="261.62" y="134.62" size="1.778" layer="95" font="vector" ratio="12" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="NRST"/>
-<wire x1="152.4" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="116.84" x2="167.64" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="88.9" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="RESET"/>
 <wire x1="93.98" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="160.02" y1="114.3" x2="160.02" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="U1" gate="G$1" pin="NRST"/>
 <wire x1="160.02" y1="116.84" x2="160.02" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="116.84" x2="160.02" y2="116.84" width="0.1524" layer="91" style="longdash"/>
+<wire x1="160.02" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91" style="longdash"/>
 <junction x="160.02" y="116.84"/>
 </segment>
 </net>
@@ -4644,11 +4639,7 @@ Standard 11x14 US Ledger frame</description>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="SUPPLY18" gate="G$1" pin="VUSB"/>
-<wire x1="50.8" y1="134.62" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C21" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="137.16" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="137.16" x2="55.88" y2="137.16" width="0.1524" layer="91"/>
-<junction x="50.8" y="137.16"/>
+<wire x1="50.8" y1="134.62" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="EN"/>
