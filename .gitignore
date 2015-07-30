@@ -25,3 +25,5 @@ USB_TPM/TPM.s#6
 USB_TPM/TPM.s#7
 USB_TPM/TPM.s#8
 USB_TPM/TPM.s#9
+*.b#1
+Hardware/TPM.b#2
