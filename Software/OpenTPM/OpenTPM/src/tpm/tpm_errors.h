@@ -1,0 +1,147 @@
+/*							 -*- C++ -*
+ *
+ * $Id:	errors.h,v 1.13.2.2	2005/03/07 21:48:31	nbohlmann Exp $
+ *
+ *	  All of the possible error	codes for the chip
+ *
+ */
+
+#ifndef	ERRORS_H
+#define	ERRORS_H
+
+#include <asf.h>
+typedef	uint32_t tRetCode;
+
+#define	TPM_BASE						0	  // 0x000 - 0x3FF
+#define	TPM_NONFATAL				0x800	  // 0x800 - 0xBFF
+#define	TPM_ATMEL_BASE				0x400	  // 0x400 - 0x7FF
+#define	TPM_ATMEL_NONFATAL			0xC00	  // 0xC00 - 0xFFF
+
+#define	TPM_BYTE1_NONFATAL			0x08
+#define	TPM_BYTE1_ATMEL_FATAL		0x04
+#define	TPM_BYTE1_ATMEL_NONFATAL	0x0C
+
+/* The actual return codes from	the	TCPA specification */
+#define	TPM_SUCCESS						TPM_BASE
+
+#define	  TPM_AUTHFAIL					(TPM_BASE+1)
+#define	  TPM_BADINDEX					(TPM_BASE+2)
+#define	  TPM_BAD_PARAMETER				(TPM_BASE+3)
+#define	  TPM_AUDITFAILURE				(TPM_BASE+4)
+#define	  TPM_CLEAR_DISABLED			(TPM_BASE+5)
+#define	  TPM_DEACTIVATED				(TPM_BASE+6)
+#define	  TPM_DISABLED					(TPM_BASE+7)
+#define	  TPM_DISABLED_CMD				(TPM_BASE+8)
+#define	  TPM_FAIL						(TPM_BASE+9)
+#define	  TPM_BAD_ORDINAL				(TPM_BASE+10)
+#define	  TPM_INSTALL_DISABLED			(TPM_BASE+11)
+#define	  TPM_INVALID_KEYHANDLE			(TPM_BASE+12)
+#define	  TPM_KEYNOTFOUND				(TPM_BASE+13)
+#define	  TPM_INAPPROPRIATE_ENC			(TPM_BASE+14)
+#define	  TPM_MIGRATEFAIL				(TPM_BASE+15)
+#define	  TPM_INVALID_PCR_INFO			(TPM_BASE+16)
+#define	  TPM_NO_PCR_INFO				(TPM_BASE+16)
+#define	  TPM_NOSPACE					(TPM_BASE+17)
+#define	  TPM_NOSRK						(TPM_BASE+18)
+#define	  TPM_NOTSEALED_BLOB			(TPM_BASE+19)
+#define	  TPM_OWNER_SET					(TPM_BASE+20)
+#define	  TPM_RESOURCES					(TPM_BASE+21)
+#define	  TPM_SHORTRANDOM				(TPM_BASE+22)
+#define	  TPM_SIZE						(TPM_BASE+23)
+#define	  TPM_WRONGPCRVAL				(TPM_BASE+24)
+#define	  TPM_BAD_PARAM_SIZE			(TPM_BASE+25)
+#define	  TPM_SHA_THREAD				(TPM_BASE+26)
+#define	  TPM_SHA_ERROR					(TPM_BASE+27)
+#define	  TPM_FAILEDSELFTEST			(TPM_BASE+28)
+#define	  TPM_AUTH2FAIL					(TPM_BASE+29)
+#define	  TPM_BADTAG					(TPM_BASE+30)
+#define	  TPM_IOERROR					(TPM_BASE+31)
+#define	  TPM_ENCRYPT_ERROR				(TPM_BASE+32)
+#define	  TPM_DECRYPT_ERROR				(TPM_BASE+33)
+#define	  TPM_INVALID_AUTHHANDLE		(TPM_BASE+34)
+#define	  TPM_NO_ENDORSEMENT			(TPM_BASE+35)
+#define	  TPM_INVALID_KEYUSAGE			(TPM_BASE+36)
+#define	  TPM_WRONG_ENTITYTYPE			(TPM_BASE+37)
+#define	  TPM_INVALID_POSTINIT			(TPM_BASE+38)
+#define	  TPM_INAPPROPRIATE_SIG			(TPM_BASE+39)
+#define	  TPM_BAD_KEY_PROPERTY			(TPM_BASE+40)
+#define	  TPM_BAD_MIGRATION				(TPM_BASE+41)
+#define	  TPM_BAD_SCHEME				(TPM_BASE+42)
+#define	  TPM_BAD_DATASIZE				(TPM_BASE+43)
+#define	  TPM_BAD_MODE					(TPM_BASE+44)
+#define	  TPM_BAD_PRESENCE				(TPM_BASE+45)
+#define	  TPM_BAD_VERSION				(TPM_BASE+46)
+#define	  TPM_NO_WRAP_TRANSPORT			(TPM_BASE+47)
+#define	  TPM_AUDITFAIL_UNSUCCESSFUL	(TPM_BASE+48)
+#define	  TPM_AUDITFAIL_SUCCESSFUL		(TPM_BASE+49)
+#define	  TPM_NOTRESETABLE				(TPM_BASE+50)
+#define	  TPM_NOTLOCAL					(TPM_BASE+51)
+#define	  TPM_BAD_TYPE					(TPM_BASE+52)
+#define	  TPM_INVALID_RESOURCE			(TPM_BASE+53)
+#define	  TPM_NOTFIPS					(TPM_BASE+54)
+#define	  TPM_INVALID_FAMILY			(TPM_BASE+55)
+#define	  TPM_NO_NV_PERMISSION			(TPM_BASE+56)
+#define	  TPM_REQUIRES_SIGN				(TPM_BASE+57)
+#define	  TPM_KEY_NOTSUPPORTED			(TPM_BASE+58)
+#define	  TPM_AUTH_CONFLICT				(TPM_BASE+59)
+#define	  TPM_AREA_LOCKED				(TPM_BASE+60)
+#define	  TPM_BAD_LOCALITY				(TPM_BASE+61)
+#define	  TPM_READ_ONLY					(TPM_BASE+62)
+#define	  TPM_PER_NOWRITE				(TPM_BASE+63)
+#define	  TPM_FAMILYCOUNT				(TPM_BASE+64)
+#define	  TPM_WRITE_LOCKED				(TPM_BASE+65)
+#define	  TPM_BAD_ATTRIBUTES			(TPM_BASE+66)
+#define	  TPM_INVALID_STRUCTURE			(TPM_BASE+67)
+#define	  TPM_KEY_OWNER_CONTROL			(TPM_BASE+68)
+#define	  TPM_BAD_COUNTER				(TPM_BASE+69)
+#define	  TPM_NOT_FULLWRITE				(TPM_BASE+70)
+#define	  TPM_CONTEXT_GAP				(TPM_BASE+71)
+#define	  TPM_MAXNVWRITES				(TPM_BASE+72)
+#define	  TPM_NOOPERATOR				(TPM_BASE+73)
+#define	  TPM_RESOURCEMISSING			(TPM_BASE+74)
+#define	  TPM_DELEGATE_LOCK				(TPM_BASE+75)
+#define	  TPM_DELEGATE_FAMILY			(TPM_BASE+76)
+#define	  TPM_DELEGATE_ADMIN			(TPM_BASE+77)
+#define	  TPM_TRANSPORT_EXCLUSIVE		(TPM_BASE+78)
+#define	  TPM_OWNER_CONTROL				(TPM_BASE+79)
+#define	  TPM_DAA_RESOURCES				(TPM_BASE+80)
+#define	  TPM_DAA_INPUT_DATA0			(TPM_BASE+81)
+#define	  TPM_DAA_INPUT_DATA1			(TPM_BASE+82)
+#define	  TPM_DAA_ISSUER_SETTINGS		(TPM_BASE+83)
+#define	  TPM_DAA_TPM_SETTINGS			(TPM_BASE+84)
+#define	  TPM_DAA_STAGE					(TPM_BASE+85)
+#define	  TPM_DAA_ISSUER_VALIDITY		(TPM_BASE+86)
+#define	  TPM_DAA_WRONG_W				(TPM_BASE+87)
+#define	  TPM_BAD_HANDLE				(TPM_BASE+88)
+#define	  TPM_BAD_DELEGATE				(TPM_BASE+89)
+#define	  TPM_BAD_CONTEXT				(TPM_BASE+90)
+#define	  TPM_TOOMANYCONTEXTS			(TPM_BASE+91)
+#define	  TPM_MA_TICKET_SIGNATURE		(TPM_BASE+92)
+#define	  TPM_MA_DESTINATION			(TPM_BASE+93)
+#define	  TPM_MA_SOURCE					(TPM_BASE+94)
+#define	  TPM_MA_AUTHORITY				(TPM_BASE+95)
+#define	  TPM_PERMANENTEK				(TPM_BASE+97)
+#define	  TPM_BAD_SIGNATURE				(TPM_BASE+98)
+#define	  TPM_NOCONTEXTSPACE			(TPM_BASE+99)
+
+// nonfatal	errors
+#define	  TPM_RETRY				   (TPM_BASE+TPM_NONFATAL)
+#define	  TPM_NEEDS_SELFTEST	   (TPM_BASE+TPM_NONFATAL+1)
+#define	  TPM_DOING_SELFTEST	   (TPM_BASE+TPM_NONFATAL+2)
+#define	  TPM_LOCKED_OUT		   (TPM_BASE+TPM_NONFATAL+3)
+
+/* These are vendor	specific, but defined to fit into a	single byte	*/
+#define	  TPM_BAD_STATEID	 (TPM_ATMEL_BASE+1)
+#define	  TPM_BADWRITE		 (TPM_ATMEL_BASE+2)
+#define	  TPM_BADREAD		 (TPM_ATMEL_BASE+3)
+#define	  TPM_TAMPER_DETECT	 (TPM_ATMEL_BASE+4)
+#define	  TPM_BAD_ID		 (TPM_ATMEL_BASE+6)
+#define	  TPM_NO_ID			 (TPM_ATMEL_BASE+7)
+#define	  TPM_INT_ERROR		 (TPM_ATMEL_BASE+8)
+#define	  TPM_VERIF_FAIL	 (TPM_ATMEL_BASE+9)
+#define	  TPM_NO_FIRMWARE	 (TPM_ATMEL_BASE+10)
+
+/* this	is a special return	for	debug purposes */
+#define	  TPM_DATA_DUMP		 (TPM_ATMEL_NONFATAL+0)
+
+#endif
