@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.1">
+<eagle version="7.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4533,8 +4533,8 @@ by exp-lbrs.ulp</description>
 <instance part="U1" gate="G$1" x="121.92" y="157.48"/>
 <instance part="JP1" gate="G$1" x="45.72" y="116.84" rot="R180"/>
 <instance part="TPM1" gate="G$1" x="246.38" y="154.94"/>
-<instance part="GND1" gate="1" x="226.06" y="114.3"/>
-<instance part="GND2" gate="1" x="279.4" y="114.3"/>
+<instance part="GND1" gate="1" x="226.06" y="104.14"/>
+<instance part="GND2" gate="1" x="279.4" y="104.14"/>
 <instance part="GND3" gate="1" x="55.88" y="101.6"/>
 <instance part="GND5" gate="1" x="154.94" y="96.52"/>
 <instance part="SHA1" gate="G$1" x="172.72" y="68.58"/>
@@ -4801,7 +4801,7 @@ by exp-lbrs.ulp</description>
 <pinref part="TPM1" gate="G$1" pin="GND@18"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="264.16" y1="142.24" x2="279.4" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="279.4" y1="142.24" x2="279.4" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="142.24" x2="279.4" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="TPM1" gate="G$1" pin="GND@25"/>
 <wire x1="264.16" y1="167.64" x2="279.4" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="279.4" y1="167.64" x2="279.4" y2="142.24" width="0.1524" layer="91"/>
@@ -4814,7 +4814,7 @@ by exp-lbrs.ulp</description>
 <wire x1="226.06" y1="142.24" x2="226.06" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="TPM1" gate="G$1" pin="TESTBI"/>
 <wire x1="226.06" y1="134.62" x2="226.06" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="132.08" x2="226.06" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="132.08" x2="226.06" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="149.86" x2="226.06" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="149.86" x2="226.06" y2="142.24" width="0.1524" layer="91"/>
 <pinref part="TPM1" gate="G$1" pin="TESTL"/>
@@ -5592,6 +5592,41 @@ by exp-lbrs.ulp</description>
 <pinref part="U1" gate="G$1" pin="PA15/PGMD3"/>
 <wire x1="152.4" y1="134.62" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
 <label x="154.94" y="134.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA9/PGMM1"/>
+<wire x1="152.4" y1="149.86" x2="175.26" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="149.86" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="116.84" x2="342.9" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="116.84" x2="342.9" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="CS"/>
+<wire x1="342.9" y1="246.38" x2="365.76" y2="246.38" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA5/PGMRDY"/>
+<wire x1="152.4" y1="160.02" x2="182.88" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="160.02" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="111.76" x2="355.6" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="111.76" x2="355.6" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="203.2" x2="416.56" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="416.56" y1="203.2" x2="416.56" y2="236.22" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="HOLD/SO3"/>
+<wire x1="416.56" y1="236.22" x2="396.24" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$25" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PA6/PGMNOE"/>
+<wire x1="152.4" y1="157.48" x2="180.34" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="157.48" x2="180.34" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="114.3" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="353.06" y1="114.3" x2="353.06" y2="231.14" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="WP/SO2"/>
+<wire x1="353.06" y1="231.14" x2="365.76" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
