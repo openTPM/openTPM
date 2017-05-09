@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.4.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3588,88 +3588,6 @@ Standard 11x14 US Ledger frame</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="u2ftoken">
-<packages>
-<package name="SLIDER_PASSIVE_1SEG_12MM">
-<description>&lt;b&gt;Slider, Passive Type, Single Segment, 12mm wide&lt;/b&gt;
-&lt;p&gt;
-Source : http://www.PatternAgents.com
-&lt;br&gt;
-Github : https://github.com/PatternAgents 
-&lt;br&gt;
-License : http://creativecommons.org/licenses/by-sa/3.1/ (Creative Commons 3.1)
-&lt;p&gt; 
-THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-&lt;p&gt;</description>
-<polygon width="0.6096" layer="1" spacing="0.254">
-<vertex x="-5.08" y="0"/>
-<vertex x="5.08" y="0"/>
-<vertex x="5.08" y="-2.54"/>
-<vertex x="-5.08" y="-2.54"/>
-</polygon>
-<pad name="S1" x="0" y="-0.508" drill="0.3556" rot="R270" stop="no" thermals="no"/>
-<polygon width="0.254" layer="41" spacing="0.254">
-<vertex x="5.715" y="-3.048"/>
-<vertex x="-5.715" y="-3.048"/>
-<vertex x="-5.715" y="0.508"/>
-<vertex x="5.715" y="0.508"/>
-</polygon>
-<polygon width="0.254" layer="43" spacing="0.254">
-<vertex x="-5.715" y="0.508"/>
-<vertex x="-5.715" y="-3.048"/>
-<vertex x="5.715" y="-3.048"/>
-<vertex x="5.715" y="0.508"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="SLIDER_PASSIVE_1SEG">
-<description>&lt;b&gt;Slider, Passive Touch/Capacitive Sensing Type, One (1) Segment&lt;/b&gt;
-&lt;p&gt;
-Source : http://www.PatternAgents.com
-&lt;br&gt;
-Github : https://github.com/PatternAgents 
-&lt;br&gt;
-License : http://creativecommons.org/licenses/by-sa/3.1/ (Creative Commons 3.1)
-&lt;p&gt; 
-THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-&lt;p&gt;</description>
-<pin name="SL1" x="15.24" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="5.08" x2="-10.16" y2="0" width="0.254" layer="94"/>
-<text x="15.24" y="0" size="1.27" layer="95" font="vector" ratio="15">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SLIDER_PASSIVE_1SEG" prefix="SL">
-<description>&lt;b&gt;Slider, Passive Touch/Capacitive Sensing Type, One (1) Segment&lt;/b&gt;
-&lt;p&gt;
-Source : http://www.PatternAgents.com
-&lt;br&gt;
-Github : https://github.com/PatternAgents 
-&lt;br&gt;
-License : http://creativecommons.org/licenses/by-sa/3.1/ (Creative Commons 3.1)
-&lt;p&gt; 
-THIS SOFTWARE IS PROVIDED BY THE CONTRIBUTORS "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-&lt;p&gt;</description>
-<gates>
-<gate name="SL1" symbol="SLIDER_PASSIVE_1SEG" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SLIDER_PASSIVE_1SEG_12MM">
-<connects>
-<connect gate="SL1" pin="SL1" pad="S1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="CHEEPER-REV0.51A">
 <description>Generated from &lt;b&gt;CHEEPER-REV0.51A.sch&lt;/b&gt;&lt;p&gt;
 by exp-lbrs.ulp</description>
@@ -4496,14 +4414,13 @@ by exp-lbrs.ulp</description>
 <part name="U3" library="ALLEYBEACH_LIB" deviceset="TC58CVG0S3HQAIE" device="WSON" value="TC58CVG0S3HQAIEWSON"/>
 <part name="SUPPLY20" library="TPM" deviceset="3.3V" device=""/>
 <part name="GND23" library="TPM" deviceset="GND" device=""/>
-<part name="SL1" library="u2ftoken" deviceset="SLIDER_PASSIVE_1SEG" device=""/>
-<part name="TP1" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
-<part name="TP2" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
-<part name="TP3" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
-<part name="TP4" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
-<part name="TP5" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
+<part name="RST" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
+<part name="SWCLK" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
+<part name="SWDIO" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
+<part name="PB5" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
+<part name="PB4" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
 <part name="R11" library="TPM" deviceset="RESISTOR" device=".0402" value="10K"/>
-<part name="TP6" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
+<part name="3V3" library="CHEEPER-REV0.51A" deviceset="PTR1" device="B1,27"/>
 <part name="SUPPLY27" library="TPM" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
@@ -4528,6 +4445,12 @@ by exp-lbrs.ulp</description>
 <text x="180.34" y="83.82" size="2.54" layer="94" font="vector" ratio="12">CryptoAuthentication ICs</text>
 <text x="106.68" y="83.82" size="2.54" layer="94" font="vector" ratio="12">JTAG</text>
 <text x="363.22" y="187.96" size="2.54" layer="94" font="vector" ratio="12">Power Decoupling</text>
+<wire x1="43.18" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="43.18" x2="22.86" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="22.86" y1="22.86" x2="43.18" y2="22.86" width="0.1524" layer="94"/>
+<wire x1="43.18" y1="22.86" x2="43.18" y2="43.18" width="0.1524" layer="94"/>
+<text x="33.02" y="33.02" size="1.778" layer="94" align="center">CAPACTIVE
+PLANE</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="121.92" y="157.48"/>
@@ -4653,14 +4576,13 @@ by exp-lbrs.ulp</description>
 <instance part="U3" gate="G$1" x="381" y="238.76"/>
 <instance part="SUPPLY20" gate="G$1" x="401.32" y="251.46"/>
 <instance part="GND23" gate="1" x="398.78" y="223.52"/>
-<instance part="SL1" gate="SL1" x="27.94" y="33.02"/>
-<instance part="TP1" gate="G$1" x="96.52" y="78.74" rot="R90"/>
-<instance part="TP2" gate="G$1" x="93.98" y="76.2" rot="R90"/>
-<instance part="TP3" gate="G$1" x="91.44" y="73.66" rot="R90"/>
-<instance part="TP4" gate="G$1" x="88.9" y="71.12" rot="R90"/>
-<instance part="TP5" gate="G$1" x="86.36" y="68.58" rot="R90"/>
+<instance part="RST" gate="G$1" x="96.52" y="78.74" rot="R90"/>
+<instance part="SWCLK" gate="G$1" x="93.98" y="76.2" rot="R90"/>
+<instance part="SWDIO" gate="G$1" x="91.44" y="73.66" rot="R90"/>
+<instance part="PB5" gate="G$1" x="88.9" y="71.12" rot="R90"/>
+<instance part="PB4" gate="G$1" x="86.36" y="68.58" rot="R90"/>
 <instance part="R11" gate="G$1" x="58.42" y="33.02" rot="R180"/>
-<instance part="TP6" gate="G$1" x="93.98" y="45.72" rot="R90"/>
+<instance part="3V3" gate="G$1" x="93.98" y="45.72" rot="R90"/>
 <instance part="SUPPLY27" gate="G$1" x="81.28" y="45.72"/>
 </instances>
 <busses>
@@ -4680,7 +4602,7 @@ by exp-lbrs.ulp</description>
 <pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="PB4" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TDI/PB4"/>
 <wire x1="96.52" y1="127" x2="83.82" y2="127" width="0.1524" layer="91"/>
@@ -4688,11 +4610,11 @@ by exp-lbrs.ulp</description>
 <wire x1="83.82" y1="68.58" x2="83.82" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="58.42" x2="99.06" y2="58.42" width="0.1524" layer="91"/>
 <label x="99.06" y="58.42" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP5" gate="G$1" pin="TP"/>
+<pinref part="PB4" gate="G$1" pin="TP"/>
 <junction x="83.82" y="68.58"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="PB5" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TDO/TRACESWO/PB5"/>
 <wire x1="96.52" y1="124.46" x2="86.36" y2="124.46" width="0.1524" layer="91"/>
@@ -4700,11 +4622,11 @@ by exp-lbrs.ulp</description>
 <wire x1="86.36" y1="71.12" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="60.96" x2="99.06" y2="60.96" width="0.1524" layer="91"/>
 <label x="99.06" y="60.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP4" gate="G$1" pin="TP"/>
+<pinref part="PB5" gate="G$1" pin="TP"/>
 <junction x="86.36" y="71.12"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="SWDIO" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TMS/SWDIO/PB6"/>
 <wire x1="96.52" y1="121.92" x2="88.9" y2="121.92" width="0.1524" layer="91"/>
@@ -4712,11 +4634,11 @@ by exp-lbrs.ulp</description>
 <wire x1="88.9" y1="73.66" x2="88.9" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="63.5" x2="99.06" y2="63.5" width="0.1524" layer="91"/>
 <label x="99.06" y="63.5" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="SWDIO" gate="G$1" pin="TP"/>
 <junction x="88.9" y="73.66"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="SWCLK" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="TCK/SWCLK/PB7"/>
 <wire x1="96.52" y1="119.38" x2="91.44" y2="119.38" width="0.1524" layer="91"/>
@@ -4724,7 +4646,7 @@ by exp-lbrs.ulp</description>
 <wire x1="91.44" y1="76.2" x2="91.44" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="66.04" x2="99.06" y2="66.04" width="0.1524" layer="91"/>
 <label x="99.06" y="66.04" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="SWCLK" gate="G$1" pin="TP"/>
 <junction x="91.44" y="76.2"/>
 </segment>
 </net>
@@ -5281,7 +5203,7 @@ by exp-lbrs.ulp</description>
 <wire x1="401.32" y1="246.38" x2="401.32" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="TP6" gate="G$1" pin="TP"/>
+<pinref part="3V3" gate="G$1" pin="TP"/>
 <wire x1="91.44" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY27" gate="G$1" pin="3.3V"/>
 </segment>
@@ -5409,7 +5331,7 @@ by exp-lbrs.ulp</description>
 <junction x="160.02" y="116.84"/>
 <wire x1="93.98" y1="68.58" x2="99.06" y2="68.58" width="0.1524" layer="91"/>
 <label x="99.06" y="68.58" size="1.27" layer="95" xref="yes"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="RST" gate="G$1" pin="TP"/>
 <junction x="93.98" y="78.74"/>
 </segment>
 </net>
@@ -5575,9 +5497,8 @@ by exp-lbrs.ulp</description>
 <label x="91.44" y="134.62" size="1.4224" layer="95" font="vector" ratio="12" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="CAP" class="0">
 <segment>
-<pinref part="SL1" gate="SL1" pin="SL1"/>
 <wire x1="43.18" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
 </segment>
@@ -5634,4 +5555,10 @@ by exp-lbrs.ulp</description>
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
